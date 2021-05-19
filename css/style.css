@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+    background-color: #0059de;
+    color: rgb(240, 68, 0);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+h1 {
+    font-size: 150px;
+    text-shadow: -1px 0px #f8c5c5;
+}
+
+.color-change-2x {
+    -webkit-animation: color-change-2x 3s linear infinite alternate both;
+    animation: color-change-2x 3s linear infinite alternate both;
+}
+
+.pulsate-bck {
+    -webkit-animation: pulsate-bck 1.5s ease-in-out infinite both;
+    animation: pulsate-bck 1.5s ease-in-out infinite both;
+}
+
+
+@-webkit-keyframes pulsate-bck {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes pulsate-bck {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+
+ @-webkit-keyframes color-change-2x {
+    0% {
+      background: #1b98ff;
+    }
+    100% {
+      background: #b22cff;
+    }
+  }
+  @keyframes color-change-2x {
+    0% {
+      background: #1b98ff;
+    }
+    100% {
+      background: #b22cff;
+    }
+  }
+  
+
+
+
+
+  
